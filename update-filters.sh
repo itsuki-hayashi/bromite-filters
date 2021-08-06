@@ -15,3 +15,11 @@ wget -O filters/spyware.txt https://raw.githubusercontent.com/AdguardTeam/Filter
 wget -O filters/track-param.txt https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt
 wget -O filters/turkish.txt https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_13_Turkish/filter.txt
 wget -O filters/vietnamese.txt https://raw.githubusercontent.com/abpvn/abpvn/master/filter/abpvn.txt
+
+filters=($(ls -d filters/*))
+input_files=$(IFS=, ; echo "${filters[*]}")
+
+ruleset_converter --input_format=filter-list \
+	--output_format=unindexed-ruleset \
+    --input_files=$input_files \
+	--output_file=filters.dat

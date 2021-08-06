@@ -3,7 +3,7 @@
 To update filters.dat, run the following command:
 
 ```bash
-./update-filters.sh && ./compile-filters.sh
+./update-filters.sh
 ```
 
 To filter ads, use the following URL:
