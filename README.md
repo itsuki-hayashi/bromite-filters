@@ -3,6 +3,9 @@
 
 # Usage
 
+This ruleset for Bromite should update itself daily at 00:00 UTC via GitHub Workflow
+unless future changes to GitHub Actions break it.
+
 To update filters.dat locally, run the following command:
 
 ```bash
