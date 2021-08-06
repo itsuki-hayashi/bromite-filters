@@ -1,6 +1,9 @@
+# Status
+[![Update Filters](https://github.com/zhiyuan-lin/bromite-filters/actions/workflows/update-filters.yml/badge.svg)](https://github.com/zhiyuan-lin/bromite-filters/actions/workflows/update-filters.yml)
+
 # Usage
 
-To update filters.dat, run the following command:
+To update filters.dat locally, run the following command:
 
 ```bash
 ./update-filters.sh
