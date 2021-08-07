@@ -16,7 +16,7 @@ wget -O filters/track-param.txt https://raw.githubusercontent.com/AdguardTeam/Fi
 wget -O filters/turkish.txt https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_13_Turkish/filter.txt
 wget -O filters/vietnamese.txt https://raw.githubusercontent.com/abpvn/abpvn/master/filter/abpvn.txt
 
-filters=($(ls -d filters/*))
+filters=($(ls -S filters/*))
 input_files=$(IFS=, ; echo "${filters[*]}")
 
 ./ruleset_converter --input_format=filter-list \
